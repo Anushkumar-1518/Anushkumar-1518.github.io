@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anush Kumar Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6rem 4rem;
+      min-height: 100vh;
+      background-color: #0f0f0f;
+      flex-wrap: wrap;
+      animation: fadeIn 2s ease;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding-right: 3rem;
+      animation: slideLeft 1.2s ease;
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+      color: #00ffc3;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.25rem;
+      color: #ccc;
+      max-width: 600px;
+      margin-top: 1rem;
+    }
+
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      animation: slideRight 1.2s ease;
+    }
+
+    .hero-image img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      border: 3px solid #333;
+      box-shadow: 0 0 20px rgba(0, 255, 195, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #00ffc3;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      border: 1px solid #333;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #00ffc3;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1f1f1f;
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        padding: 3rem 1.5rem;
+        text-align: center;
+      }
+      .hero-text {
+        padding-right: 0;
+        margin-top: 2rem;
+      }
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes slideLeft {
+      from { opacity: 0; transform: translateX(-60px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes slideRight {
+      from { opacity: 0; transform: translateX(60px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Anush Kumar Saka</h1>
+      <p>Kakinada, India<br>Email: anushkumarsaka@gmail.com<br>Phone: 6300887414</p>
+      <p>
+        I'm a passionate Full Stack Developer with experience in building scalable web applications using modern tech like Java, Spring Boot, ReactJS, and Node.js.
+        I love clean UI, seamless APIs, and solving meaningful problems through code.
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="anush dp.jpg" alt="Anush Kumar Portrait">
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <strong>Full Stack Java Developer Intern - AiVariant (Remote)</strong>
+      <p><em>Dec 2024 – Present</em></p>
+      <ul>
+        <li>Developed web apps using Java, Spring Boot & ReactJS.</li>
+        <li>Built REST APIs and collaborated with cross-functional teams.</li>
+        <li>Followed Agile practices and conducted code reviews.</li>
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>B.Tech, CSE - Vishnu Institute of Technology</strong> (2021 – 2025) | GPA: 8.4</p>
+      <p><strong>Diploma - Andhra Polytechnic, Kakinada</strong> (2019 – 2021) | 86%</p>
+      <p><strong>SSC - ZPHS Vakathippa</strong> (2019) | GPA: 9.7</p>
+    </div>
+
+    <!-- Projects -->
+    <h2>Projects</h2>
+    <div class="card">
+      <strong>Women's Safety Web App</strong>
+      <p>Emergency alerts, secret camera detection, and safety tools for women.</p>
+    </div>
+    <div class="card">
+      <strong>Student Blogs Platform</strong>
+      <p>Blog platform with content creation, editing, and publishing features.</p>
+    </div>
+    <div class="card">
+      <strong>Hope Connect</strong>
+      <p>Blood & organ donation platform with scheduling and secure communication.</p>
+    </div>
+
+    <!-- Trainings -->
+<h2>Trainings</h2>
+<div class="card">
+  <ul>
+    <li>Full Stack Web App with Node.js - Codinza</li>
+    <li>Full Stack Java Development - ExcelR</li>
+  </ul>
+</div>
+
+<!-- Skills -->
+<h2>Skills</h2>
+<div class="card">
+  <ul>
+    <li><strong>Languages:</strong> JavaScript, Java, C, Python</li>
+    <li><strong>Frontend:</strong> HTML, CSS, Bootstrap, React.js</li>
+    <li><strong>Backend:</strong> Node.js, Spring Boot</li>
+    <li><strong>Database:</strong> MySQL, MongoDB</li>
+    <li><strong>DevOps:</strong> GitLab, Jenkins, Docker, AWS</li>
+    <li><strong>Tools:</strong> VS Code, IntelliJ, STS</li>
+  </ul>
+</div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Anush Kumar | Portfolio
+  </footer>
+
+</body>
+</html>
